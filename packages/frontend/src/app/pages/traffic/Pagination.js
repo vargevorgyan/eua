@@ -1,6 +1,7 @@
 import React from 'react'
 import { ROUTES_COUNT_FOR_PAGE } from '../../utils/utils'
 import Arrow from "../../icons/arrow.png"
+import "./Pagination.css"
 
 const Pagination = ({currentPage, setCurrentPage,data}) => {
     const lastRouteIndex =  (currentPage+1) * ROUTES_COUNT_FOR_PAGE > data.length ? data.length: (currentPage+1) * ROUTES_COUNT_FOR_PAGE
@@ -14,7 +15,7 @@ const Pagination = ({currentPage, setCurrentPage,data}) => {
                     <img src={Arrow} alt="" />
                 </button>
                         {Array(Math.ceil(data.length / ROUTES_COUNT_FOR_PAGE)).fill((_,i)=>i).map((_,i)=>
-                            <button onClick={()=>setCurrentPage(i)} key={i}>
+                            <button className='pag-num' onClick={()=>setCurrentPage(i)} key={i}>
                                 {i+1}
                             </button>
                         )}
