@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    column-gap: 18px;
+}
+
+canvas {
+    width: 625px !important;
+    height: 340px !important;
+    border: 1px solid #E2E2EA;
+    border-radius: 20px;
+}

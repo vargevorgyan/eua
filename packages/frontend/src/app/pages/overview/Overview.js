@@ -1,6 +1,7 @@
 import React from 'react'
 import "./overview.css"
 import routesData from '../../dataset/routesData';
+import { Bar } from './Bar';
 
 const Overwiew = () => {
   return (
@@ -37,6 +38,7 @@ const Overwiew = () => {
             </div>
         </div>
         <div className='over-bottom'>
+           <Bar />
         </div>
     </div>
   )

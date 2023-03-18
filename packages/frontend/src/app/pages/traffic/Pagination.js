@@ -19,7 +19,7 @@ const Pagination = ({currentPage, setCurrentPage,data}) => {
                                 {i+1}
                             </button>
                         )}
-                <button onClick={()=>setCurrentPage(currentPage - ROUTES_COUNT_FOR_PAGE > data.length ? data.length : currentPage - ROUTES_COUNT_FOR_PAGE)}>
+                <button onClick= {()=>setCurrentPage(currentPage - ROUTES_COUNT_FOR_PAGE > data.length ? data.length : currentPage - ROUTES_COUNT_FOR_PAGE)}>
                     <img src={Arrow} alt="" />
                 </button>
             </div>
