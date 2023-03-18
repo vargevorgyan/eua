@@ -1,7 +1,7 @@
 import React from 'react'
 import css  from './RoutesList.module.css'
-import FilterIcon from "../icons/Filter"
-import ArrowDownIcon from "../icons/ArrowDown"
+import FilterIcon from "../../../../icons/Filter"
+import ArrowDownIcon from "../../../../icons/ArrowDown"
 
 const RoutesList = () => {
   return (
