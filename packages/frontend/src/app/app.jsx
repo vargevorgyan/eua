@@ -9,9 +9,11 @@ export function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index />
+          <RoutesList />
         </Route>
       </Routes>
      </>
   );
 }
+
 export default App;
