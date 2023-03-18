@@ -25,7 +25,7 @@ const Traffic = () => {
     setCurrentPage(0)
     setDataset(filteredValues)  
   }, [debouncedValue])
-console.log(routes);
+
   useEffect(() => {
     setRoutes(getPagesRoutes(currentPage, dataset))
   }, [dataset, currentPage])

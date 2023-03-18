@@ -11,15 +11,15 @@ const Pagination = ({currentPage, setCurrentPage,data}) => {
                 {currentPage*ROUTES_COUNT_FOR_PAGE} - {lastRouteIndex } of {data.length} items
             </div>
             <div className="pagination-itmems-container">
-                <button >
+                <button onClick={()=>setCurrentPage(currentPage - ROUTES_COUNT_FOR_PAGE)}>
                     <img src={Arrow} alt="" />
                 </button>
                         {Array(Math.ceil(data.length / ROUTES_COUNT_FOR_PAGE)).fill((_,i)=>i).map((_,i)=>
-                            <button className='pag-num' onClick={()=>setCurrentPage(i)} key={i}>
+                            <button  className='pag-num' onClick={()=>setCurrentPage(i * ROUTES_COUNT_FOR_PAGE)} key={i}>
                                 {i+1}
                             </button>
                         )}
-                <button>
+                <button onClick={()=>setCurrentPage(currentPage + ROUTES_COUNT_FOR_PAGE)}>
                     <img src={Arrow} alt="" />
                 </button>
             </div>
