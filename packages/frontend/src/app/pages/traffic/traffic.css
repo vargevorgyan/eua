@@ -88,6 +88,7 @@ table,td,th{
 
 tr{
     background-color: white;
+    width: 100%;
 }
 
 .first-tr{
@@ -95,5 +96,5 @@ tr{
 }
 
 th,td{
-    padding: 10px 45px;
+    padding: 10px 35px;
 }
