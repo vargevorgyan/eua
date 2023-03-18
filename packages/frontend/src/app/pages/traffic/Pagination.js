@@ -9,7 +9,7 @@ const Pagination = ({currentPage, changePage}) => {
             {currentPage+1} - {currentPage * ROUTES_COUNT_FOR_PAGE} of {DATSET.length} items
         </div>
         <div className="">
-
+        
         </div>
     </div>
   )
