@@ -30,17 +30,28 @@ const Traffic = () => {
     setRoutes(getPagesRoutes(currentPage, dataset))
   }, [dataset, currentPage])
   
+
+  const [hide, setHide] = useState(true);
   
   
   return (
     <>
     <div className='traffic-top'>
       <p className='routes-text'>Routes list</p>
-      <div className='filter'>
+      <div className='filter' onClick={() => setHide(!hide)}>
           <img src={filterIcon} alt="" />
               <p className='filter-text'>Filter</p>
           <img src={arrow} alt="" />
       </div>
+    </div>
+    <div className={hide ? 'filterBox hide' : "filterBox unhide"}>
+      <input type="text" className='filter-input' placeholder='Start address' />
+      <input type="text" className='filter-input' placeholder='End address' />
+      <input type="text" className='filter-input' placeholder='Work load index from 22' />
+      <input type="text" className='filter-input' placeholder='Work load index to 100' />
+      <input type="text" className='filter-input' placeholder='Usage index from 12' />
+      <input type="text" className='filter-input' placeholder='Usage index to 100' />
+      <button className='filter-btn'>Filter</button>
     </div>
     <div className='traffic-table'>
       <div className='traffic-search'>
