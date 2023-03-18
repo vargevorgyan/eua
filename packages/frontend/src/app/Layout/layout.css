@@ -19,13 +19,15 @@ main{
     width: 100%;
     height: 92vh;
     display: flex;
+    background: #F5F5F5;
+    width: 100%;
 }
 
 .main-container{
+    max-width: 1485px;
     width: 100%;
     height: 100%;
-    padding: 20px;
-    background: #F5F5F5;
+    padding: 50px;
 }
 
 .header-top{
@@ -41,6 +43,7 @@ main{
     height: 100%;
     box-shadow: inset -1px 0px 0px #E2E2EA;
     padding: 50px 25px;
+    background: white;
 }
 
 .sideBar ul{
