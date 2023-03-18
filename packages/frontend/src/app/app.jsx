@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./davo/Layout/Layout";
+import Traffic from "./davo/pages/traffic/Traffic";
 
 export function App() {
 
@@ -8,8 +9,7 @@ export function App() {
     <>
       <Routes>
         <Route element={<Layout />}>
-          <Route index />
-          <RoutesList />
+          <Route index element={<Traffic />}/>
         </Route>
       </Routes>
      </>
