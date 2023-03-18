@@ -2,10 +2,6 @@ import React from 'react'
 import "./overview.css"
 import routesData from '../../dataset/routesData';
 
-const x = routesData.reduce((acc,item) => {
-    return acc += item.Workload_index
-},0)
-
 const Overwiew = () => {
   return (
     <div className='overview'>

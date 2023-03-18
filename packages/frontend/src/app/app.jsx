@@ -7,14 +7,14 @@ export function App() {
 
   
   return (
-    <>
+  
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Traffic />}/>
           <Route path="overview" element={<Overwiew />} />
         </Route>
       </Routes>
-     </>
+  
   );
 }
 
