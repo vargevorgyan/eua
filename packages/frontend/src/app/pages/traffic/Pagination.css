@@ -7,4 +7,17 @@
 .pag-num{
     border: none;
     outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.pagination-itmems-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination-pages{
+    font-family: sans-serif;
 }
